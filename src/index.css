@@ -11,3 +11,145 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+:root{
+  --black:#111111;
+  --primary:#1d1d1d;
+  --yellow:#E3B748;
+  --white:#ffffff;
+  --gray-icon-bg:#e6e6e6;
+  --gray-bg:#2e2e2e; 
+  --gray-font:#525252;
+  --text-black: #373737;
+
+}
+*,*::before,*::after{
+  box-sizing: border-box;
+}
+*{
+  margin: 0;
+  /* padding: 0; */
+}
+body{
+  font-family: 'Inter', sans-serif;
+  line-height: 1.5;
+  background-color: var(--primary);
+  -webkit-font-smoothning:antialiased;
+
+  color:var(--gray-font);
+
+}
+p{
+  font-size: 18px;
+}
+button,input,select,textarea{
+  font: inherit;
+}
+p,h1,h2,h3,h4,h5,h6{
+  overflow-wrap: break-word;
+}
+img,picture,canvas,svg,audio,video{
+display: block;
+max-width: 100%;
+}
+#root,#__next{
+  isolation: isolate;
+}
+
+.toggler-btn{
+  display: none;
+}
+.toggler-list{
+  display: none;
+  color:var(--white);
+  font-weight: 600;
+  font-size: 16px;
+  padding-left: 0;
+  padding-top: 20px;
+  
+}
+
+.container {
+  max-width: 1536px;
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 2rem;
+  padding-right: 2rem;
+  margin: 0 auto;
+  width: 100%;
+}
+.links{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 40%; 
+  color:var(--white);
+  font-size:16px;
+  font-weight:600;
+}
+/* 2xl */
+@media (max-width: 1536px) {
+  .container {
+    max-width: 1280px;
+  }
+}
+
+/* xl */
+@media (max-width: 1280px) {
+  .container {
+    max-width: 1024px;
+  }
+  .links{
+    width: 45%;
+  }
+}
+
+/* lg */
+@media (max-width: 1024px) {
+  .container {
+    max-width: 768px;
+    padding-left: 1rem;
+    padding-right: 1rem;
+  }
+  .links{
+    width: 55%;
+  }
+}
+
+
+
+/* md */
+@media (max-width: 768px) {
+  .container {
+    max-width: 640px;
+    padding-left: 0.5rem;
+    padding-right: 0.5rem;
+  }
+  .links{
+    display: none;
+  }
+  .toggler-btn{
+    display: block;
+  }
+  .toggler-list{
+    display: block;
+  }
+}
+
+/* sm */
+@media (max-width: 640px) {
+  .container {
+    max-width: 475px;
+    padding:1rem;
+  }
+}
+
+/* xs */
+@media (max-width: 475px) {
+  .container {
+    width: 100%;
+    /* padding-left:20px;
+    padding-right: 20px; */
+    /* padding-right: 10px; */
+    margin: 0 auto;
+  }
+}

@@ -1,0 +1,127 @@
+.footer-outer{
+    width: 100%;
+    padding-top:4rem ;
+    background-color: var(--black);
+    padding-bottom: 4rem;
+}
+.footer-wrapper{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    gap:2rem;
+}
+.f-wrapper{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+}
+.menu{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    /* width: 100%; */
+    gap:6rem;
+}
+.icon-alignment{
+    /* width:100%; */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap:0.5rem;
+    
+}
+.linkStyle{
+    display: inline-block;
+    padding:8px 0;
+    text-decoration: none;
+   
+    color:var(--white);
+    font-weight: 600;
+    font-size: 14px;
+    cursor: pointer;
+}
+.copyright,.copyright p{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap:1rem;
+    font-size:14px;
+    color:var(--white);
+}
+.copyright a{
+    text-decoration: none;
+    color:var(--white);
+}
+.logo-icon{
+    width:143px;
+}
+
+@media screen and (max-width:1091px)
+{
+    .logo-icon{
+        width:100px ;
+    }
+    .menu{
+        gap:4rem;
+    }
+}
+@media screen and (max-width:768px)
+{
+    .linkStyle{
+        font-size:12px ;
+    }
+    .menu{
+        gap:1rem;
+    }
+}
+@media screen and (max-width:640px)
+{
+    .footer-outer{
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+    }
+    .logo-icon{
+        width:80px ;
+    }
+    .menu{
+     gap:0.2rem;
+     padding: 0;
+    }
+    .linkStyle{
+        font-size:8px ;
+        
+    }
+    .icon-alignment{
+        gap:0.2rem;
+    }
+    .icon{
+      /* width: 30px;
+      height: 30px; */
+    }
+    .f-wrapper{
+   /* gap:0.5rem; */
+    }
+    .logo-wrapper{
+        width: max-content;
+    }
+}
+@media screen and (max-width:450px)
+{
+    .logo-icon{
+        width:70px ;
+    }
+    .linkStyle{
+        font-size:8px;
+        font-weight: normal;
+    }
+    .icon-alignment{
+        gap:3px;
+    }
+    .copyright,.copyright p{
+        font-size: 8px;
+        gap:0.5rem;
+    }
+}
