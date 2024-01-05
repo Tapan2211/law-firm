@@ -1,6 +1,6 @@
-.btn {
-  cursor: pointer;
+.btn{
+    cursor: pointer;
 }
-.btn:hover {
-  filter: brightness(0.8);
+.btn:hover{
+    filter: brightness(0.8);
 }

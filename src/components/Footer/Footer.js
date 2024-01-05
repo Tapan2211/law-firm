@@ -1,14 +1,15 @@
-import React from 'react';
-import styles from "./Footer.module.css";
+
+import styles from "./Footer.module.css"
+import React from 'react'
 import FacebookIcon from '@mui/icons-material/Facebook';
 import InstagramIcon from '@mui/icons-material/Instagram';
 import TwitterIcon from '@mui/icons-material/Twitter';
-import Logo from '../Logo/Logo';
+// import logoimg from "../../assets/logo.png"
+import Logo from '../Logo/Logo'
 import PinterestIcon from '@mui/icons-material/Pinterest';
 import { useContext } from "react";
 import { ContextData } from '../Context/ContextVar';
-
-function Footer() {
+export default function Footer() {
     let cont=useContext(ContextData);
     let {active,setActive}=cont;
   return (
@@ -48,5 +49,3 @@ function Footer() {
     </div>
   )
 }
-
-export default Footer;
