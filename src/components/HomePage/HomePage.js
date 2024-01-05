@@ -1,7 +1,7 @@
 import React from 'react'
-import Navbar from '../Navbar/Navbar';
+// import Navbar from '../Navbar/Navbar';
 import HeroSection from '../HeroSection/HeroSection'
-import AboutUs; from '../AboutUs/AboutUs'
+import AboutUs from '../AboutUs/AboutUs';
 import WhyUs from '../AboutUs/WhyUs'
 import styles from "./HomePage.module.css"
 import PracticeArea from '../PracticeArea/PracticeArea'

@@ -1,9 +1,9 @@
 import React, { useRef, useState } from "react";
-import Logo from "../Logo/Logo";
+import Logo from "../Components/Logo/Logo";
 import styles from "./Navbar.module.css";
 import MenuIcon from "@mui/icons-material/Menu";
 import { useContext } from "react";
-import { ContextData } from "../Context/ContextVar";
+import { ContextData } from "../Components/Context/ContextVar";
 
 export default function Navbar() {
   //let [active,setActive]=useState("#");
