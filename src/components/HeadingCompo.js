@@ -1,8 +1,8 @@
-import styles from "./HeadingCompo.module.css"
-import React from 'react'
+import React from "react";
+import styles from "./HeadingCompo.module.css";
 
-export default function HeadingCompo(props) {
-  return (
-    <h1 className={styles.heading}>{props.heading}</h1>
-  )
+function HeadingCompo(props) {
+  return <h1 className={styles.heading}>{props.heading}</h1>;
 }
+
+export default HeadingCompo;

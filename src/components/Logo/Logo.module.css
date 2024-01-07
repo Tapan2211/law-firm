@@ -1,9 +1,8 @@
-.logo{
-    width:143px;
+.logo {
+  width: 143px;
 }
-@media screen and (max-width:450px)
-{
-    .logo{
-        width:100px ;
-    }
+@media screen and (max-width: 450px) {
+  .logo {
+    width: 100px;
+  }
 }

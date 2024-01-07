@@ -3,13 +3,13 @@ import HeroContent from "./HeroContent";
 import styles from "./HeroSection.module.css";
 import Navbar from "../Navbars";
 
-export default function HeroSection() {
+function HeroSection() {
   return (
     <div className={styles.herosection}>
       <div className="container">
         <div className={styles["hero-content-wrapper"]}>
           <div className={styles["hero-section1"]}>
-            <Navbar/>
+            <Navbar />
             <HeroContent />
           </div>
         </div>
@@ -17,3 +17,5 @@ export default function HeroSection() {
     </div>
   );
 }
+
+export default HeroSection;

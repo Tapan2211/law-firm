@@ -1,19 +1,18 @@
-import styles from "./Footer.module.css";
 import React from "react";
+import styles from "./Footer.module.css";
 import FacebookIcon from "@mui/icons-material/Facebook";
 import InstagramIcon from "@mui/icons-material/Instagram";
 import TwitterIcon from "@mui/icons-material/Twitter";
-// import logoimg from "../../assets/logo.png"
 import Logo from "../Logo/Logo";
 import PinterestIcon from "@mui/icons-material/Pinterest";
 import { useContext } from "react";
 import { ContextData } from "../Context/ContextVar";
 
-export default function Footer() {
+function Footer() {
 
   let cont = useContext(ContextData);
   let { active, setActive } = cont;
-  
+
   return (
     <div className={styles["footer-outer"]}>
       <div className="container">
@@ -117,3 +116,5 @@ export default function Footer() {
     </div>
   );
 }
+
+export default Footer;

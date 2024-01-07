@@ -1,86 +1,76 @@
-.faqWrapper{
-    display: flex;
+.faqWrapper {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  gap: 4rem;
+  text-align: center;
+}
+.heading {
+  display: flex;
+}
+.section-wrapper {
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+  gap: 6rem;
+}
+
+.left {
+  text-align: left;
+  width: 100%;
+}
+.right {
+  text-align: left;
+  width: 100%;
+}
+.faqans {
+  font-size: 18px;
+  font-weight: 500;
+  text-align: left;
+  color: var(--gray-font);
+}
+.faqquestion {
+  font-size: 24px !important;
+  font-weight: 600;
+}
+@media screen and (max-width: 1200px) {
+  .section-wrapper {
+    gap: 4rem;
+  }
+}
+@media screen and (max-width: 1091px) {
+  .section-wrapper {
+    gap: 1.5rem;
+  }
+}
+
+@media screen and (max-width: 640px) {
+  .heading {
+    display: block;
+  }
+  .left p {
+    font-size: 1rem;
+  }
+  .section-wrapper {
     flex-direction: column;
-    width: 100%;
-    gap:4rem;
-    text-align: center;
-}
-.heading{
-    display: flex;
-}
-.section-wrapper
-{
-    display: flex;
-    align-items: flex-start;
+    align-items: center;
     justify-content: center;
-    gap:6rem;
-
-}
-
-.left{
-text-align: left;
-width: 100%;
-
-}
-.right{
-text-align: left;
-width: 100%;
-}
-.faqans{
-    font-size: 18px;
-    font-weight: 500;
+    gap: 2rem;
+  }
+  .faqWrapper {
+    gap: 2rem;
+    font: inherit;
+  }
+  .faqquestion {
+    font-family: "Inter", sans-serif;
+    font-size: 20px !important;
+    font: inherit;
     text-align: left;
-    color:var(--gray-font);
-}
-.faqquestion{
-    font-size:24px !important;
-    font-weight: 600;
-}
-@media screen and (max-width:1200px)
-{
-    .section-wrapper{
-       
-        gap:4rem;
-    }
-}
-@media screen and (max-width:1091px) {
-
-    .section-wrapper{
-        gap:1.5rem;
-    }
-}
-
-@media screen and (max-width:640px)
-{
-    .heading{
-        display: block;
-    }
-    .left p{
-        font-size: 1rem;
-    }
-    .section-wrapper{
-        flex-direction: column;
-        align-items: center;
-        justify-content: center;
-        gap:2rem;
-    }
-    .faqWrapper{
-       
-        gap:2rem;
-        font:inherit;
-    }
-    .faqquestion{
-        font-family: 'Inter', sans-serif;
-        font-size:20px !important;
-        font:inherit;
-        text-align: left;
-    }
-    .faqans{
-        font-size: 14px;
-        /* font-weight: 500;
+  }
+  .faqans {
+    font-size: 14px;
+    /* font-weight: 500;
         text-align: left;
         color:var(--gray-font); */
-    }
-    
-    
+  }
 }

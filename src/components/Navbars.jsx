@@ -5,7 +5,7 @@ import MenuIcon from "@mui/icons-material/Menu";
 import { useContext } from "react";
 import { ContextData } from "../Components/Context/ContextVar";
 
-export default function Navbar() {
+function Navbar() {
   //let [active,setActive]=useState("#");
   let cont = useContext(ContextData);
   let { active, setActive } = cont;
@@ -156,3 +156,5 @@ export default function Navbar() {
     </div>
   );
 }
+
+export default Navbar;

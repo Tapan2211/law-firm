@@ -1,60 +1,50 @@
-.teamCardWrapper{
-    display: flex !important;
-    flex-direction: row ;
-    align-items: center;
-    padding: 10px;
-    width: 100%;;
-    border-radius: 14px;
-    gap:1rem;
+.teamCardWrapper {
+  display: flex !important;
+  flex-direction: row;
+  align-items: center;
+  padding: 10px;
+  width: 100%;
+  border-radius: 14px;
+  gap: 1rem;
 }
-.teamCardRight{
-    display: flex;
-    width: 100%;
-    flex-direction: column;
-    justify-content: center;
-    align-items: flex-start;
-    
- 
-    /* padding-left: 2rem; */
-    
+.teamCardRight {
+  display: flex;
+  width: 100%;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
 }
 
-
-.member-name{
-    color:var(--white);
-    font-weight:600;
-    font-size:24px;
-    
-    width: max-content;
+.member-name {
+  color: var(--white);
+  font-weight: 600;
+  font-size: 24px;
+  width: max-content;
 }
-.imgWrapper{
-   
+.imgWrapper {
 }
-.imgWrapper img{
-    width: 100%;
-    height: 100%;
+.imgWrapper img {
+  width: 100%;
+  height: 100%;
 }
-@media screen and (max-width:1091px) {
-    .member-name{
-        font-size: 18px;
-        } 
+@media screen and (max-width: 1091px) {
+  .member-name {
+    font-size: 18px;
+  }
 }
 @media screen and (max-width: 768px) {
-    .member-name{
+  .member-name {
     font-size: 16px;
-    }
-        
+  }
 }
 
 @media screen and (max-width: 640px) {
-    .member-name{
+  .member-name {
     font-size: 14px;
-    }
-        
+  }
 }
 @media (max-width: 450px) {
-    .teamCardRight p{
-        font-size: 12px;
-    }   
-        
+  .teamCardRight p {
+    font-size: 12px;
+  }
 }
